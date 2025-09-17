@@ -15,7 +15,6 @@ pipeline{
     stage('Execute'){
       steps{
           bat '"%JAVA_HOME%\\bin\\java.exe" -jar target/HelloWorldInJava-1.0-SNAPSHOT.jar'
-'
       }
     }
   }
