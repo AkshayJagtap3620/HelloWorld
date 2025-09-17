@@ -20,7 +20,7 @@ pipeline{
 
     stage('Archive'){
       steps{
-        archiveArtifact archive : */HelloWorldInJava-1.0-SNAPSHOT.jar
+        archiveArtifacts archive : */HelloWorldInJava-1.0-SNAPSHOT.jar
       }
   }
 }
