@@ -4,13 +4,13 @@ pipeline{
   stages{
     stage('Build'){
       steps{
-        mvn clean install
+        bat 'mvn clean install'
       }
     }
 
     stage('Execute'){
       steps{
-        java -jar target/HelloWorldInJava-1.0-SNAPSHOT.jar
+        bat 'java -jar target/HelloWorldInJava-1.0-SNAPSHOT.jar'
       }
     }
   }
